@@ -1,0 +1,99 @@
+.headContainer{
+    display: flex;
+    flex-direction: row;
+    
+    border: 2px solid red;
+}
+ul{
+
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    margin-left: auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+.infoDisplay{
+   display: flex;
+   
+}
+
+.addBook {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* vertical centering */
+    align-items: center;     /* horizontal centering */
+    gap: 15px;
+    padding: 2rem;
+    background-color: #f9f9f9;
+    border: 2px solid #ccc;
+    margin: 2rem auto;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+
+    margin-top: 10%;
+  }
+  
+  .addBook input {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    
+    
+  }
+  
+  .addBook button {
+    padding: 0.5rem 1.2rem;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .addBook button:hover {
+    background-color: #45a049;
+  }
+  
+  .addBook h2 {
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+    color: #333;
+  }
+
+  .divsec{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+  
+    
+  }
+  .rmv{
+    width: 100px;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out; 
+  }
+
+  .divsec:nth-child(odd) {
+    width:40%;
+    background-color: #f9f9f9;
+    border:1px solid #e0e0e0;
+}
+
+.divsec:nth-child(even) {
+    width:40%;
+    border:1px solid #f9f9f9;
+    background-color: #e0e0e0;
+}
