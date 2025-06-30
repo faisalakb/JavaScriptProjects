@@ -1,99 +1,141 @@
-.headContainer{
-    display: flex;
-    flex-direction: row;
-    
-    border: 2px solid red;
-}
-ul{
-
-    list-style: none;
-    display: flex;
-    gap: 50px;
-    margin-left: auto;
+/* Container for header */
+.headContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #ffffff;
+  border-bottom: 2px solid #ccc;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
 }
 
-a{
-    text-decoration: none;
+/* Logo/Header title */
+.headContainer h1 {
+  font-size: 1.8rem;
+  color: #333;
+  font-weight: bold;
 }
 
-.infoDisplay{
-   display: flex;
-   
+/* Navigation menu */
+.headContainer ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
 }
 
+.headContainer ul li a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #4CAF50;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.headContainer ul li a:hover {
+  color: #388E3C;
+}
+
+/* Display area styling */
+.infoDisplay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+  padding: 1rem;
+}
+
+/* Add book form */
 .addBook {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* vertical centering */
-    align-items: center;     /* horizontal centering */
-    gap: 15px;
-    padding: 2rem;
-    background-color: #f9f9f9;
-    border: 2px solid #ccc;
-    margin: 2rem auto;
-    max-width: 400px;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 2rem;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  margin: 3rem auto;
+  max-width: 400px;
+  width: 90%;
+}
 
-    margin-top: 10%;
-  }
-  
-  .addBook input {
-    width: 100%;
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    
-    
-  }
-  
-  .addBook button {
-    padding: 0.5rem 1.2rem;
-    background-color: #4CAF50;
-    color: white;
-    font-size: 1rem;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .addBook button:hover {
-    background-color: #45a049;
-  }
-  
-  .addBook h2 {
-    margin-bottom: 10px;
-    font-size: 1.4rem;
-    color: #333;
-  }
+.addBook input {
+  width: 100%;
+  padding: 0.7rem 1rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
 
-  .divsec{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-top: 10px;
-    margin-left: auto;
-    margin-right: auto;
-  
-    
-  }
-  .rmv{
-    width: 100px;
-    cursor: pointer;
-    transition: all 0.1s ease-in-out; 
-  }
+.addBook input:focus {
+  border-color: #4CAF50;
+}
 
-  .divsec:nth-child(odd) {
-    width:40%;
-    background-color: #f9f9f9;
-    border:1px solid #e0e0e0;
+.addBook button {
+  padding: 0.6rem 1.5rem;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.addBook button:hover {
+  background-color: #388E3C;
+}
+
+.addBook h2 {
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+  color: #333;
+}
+
+/* Book display cards */
+.divsec {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  margin: 0.5rem auto;
+  width: 80%;
+  max-width: 600px;
+  background-color: #f9f9f9;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  transition: transform 0.2s ease;
+}
+
+.divsec:hover {
+  transform: translateY(-2px);
+}
+
+.divsec:nth-child(odd) {
+  background-color: #f0f8f5;
 }
 
 .divsec:nth-child(even) {
-    width:40%;
-    border:1px solid #f9f9f9;
-    background-color: #e0e0e0;
+  background-color: #e9f5ee;
+}
+
+.rmv {
+  padding: 0.4rem 0.8rem;
+  background-color: #e53935;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.rmv:hover {
+  background-color: #b71c1c;
 }
